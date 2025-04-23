@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">Login</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="form-container">
+            <form method="POST" action="/usuario/login">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha *</label>
+                    <input type="password" class="form-control" id="senha" name="senha" required>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <a href="/usuario/cadastro" class="btn btn-link">Não tem uma conta? Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 

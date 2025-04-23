@@ -1,0 +1,76 @@
+/* Estilos gerais */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Cards de livros */
+.livro-card {
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.livro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.livro-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Formulários */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Lista de trocas */
+.troca-item {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.troca-item.pendente {
+    background-color: #fff3cd;
+}
+
+.troca-item.aceita {
+    background-color: #d4edda;
+}
+
+.troca-item.recusada {
+    background-color: #f8d7da;
+}
+
+.troca-item.concluida {
+    background-color: #e2e3e5;
+}
+
+/* Botões de ação */
+.btn-acao {
+    margin-right: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .livro-card img {
+        height: 150px;
+    }
+    
+    .form-container {
+        padding: 15px;
+    }
+} 
